@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 100vh;
+    padding-inline: 3rem;
+}
+
+#event__banner {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.7)50%), url(./images/homebg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.event__container {
+    text-align: center;
+}
+
+.event__container h1 {
+    color: #dfe1e3;
+    font-size: 3.6em;
+    font-weight: bold;
+    margin-block: 2rem;
+}
+
+.event__container p {
+    width: 800px;
+    color: #fff;
+    font-size: 1.3em;
+    margin-block-end: 3.5rem;
+}
+
+.event__container a {
+    color: #fff;
+    border: 4px solid /* #337AFF */ rgb(84, 123, 146);
+    padding: 1.3rem 4rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.5em;
+    transition: .5s ease-in-out;
+
+}
+
+.event__container a:hover {
+    background: linear-gradient(90deg, hsla(202, 27%, 45%, 1) 0%, hsla(213, 77%, 14%, 1) 100%);
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    position: absolute;
+    bottom: -100px;
+    left: 17%;
+    width: 70%;
+    height: 25%;
+    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    border-radius: 15px;
+    border: 10px solid #858e96;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.time-section {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.time {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: block;
+}
+
+.separator {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    section {
+        padding-inline: 2rem;
+    }
+
+    .event__container h1 {
+        font-size: 2em;
+        margin-block: 1rem;
+    }
+
+    .event__container p {
+        color: #fff;
+        font-size: 1em;
+        width: 350px;
+        text-align: center;
+        margin-block-end: 3rem;
+    }
+
+    .event__container  a {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .countdown {
+        width: 90%;
+        left: 20px;
+        bottom: -50px;
+
+    }
+
+    .time {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .separator {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+}
